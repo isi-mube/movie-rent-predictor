@@ -9,7 +9,7 @@ This reposatory is build upon [my previous knowledge](https://github.com/isi-mub
 
 ## About the Dataset
 For a complete description of the dataset extraction process, please refer to the [SQL script](https://github.com/isi-mube/movie-rent-predictor/blob/main/notebook/sql_database_extraction_process.sql).
-Also, to read all documentation regarding `feture` selection and creating the `target` refer to the [Python script](https://github.com/isi-mube/movie-rent-predictor/blob/main/notebook/imb_solution_lab_logistic_regression.ipynb)
+Also, to read all documentation regarding `feture` selection and creating the `target` refer to the [Python script](https://github.com/isi-mube/movie-rent-predictor/blob/main/notebook/imb_solution_lab_logistic_regression.ipynb).
 
 
 ## Improvements from previous project
