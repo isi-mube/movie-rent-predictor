@@ -14,7 +14,7 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 
 ## Improvements from previous project
 * **Organization**: We have two separate scripts for SQL and Python.
-* **SQL**: Not my strongest point. For this project, it was important to decide whether RIGHT, LEFT or INNER.
+* **SQL**: Not my strongest point. For this project, it was important to decide whether RIGHT, LEFT or INNER JOIN to not loose data.
 * **Entropy-Bonus**: We fixed a GitHub formatting issue that displayed code horizontally due to HTML boxes.
 
 
