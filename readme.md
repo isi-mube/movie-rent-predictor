@@ -46,7 +46,7 @@ And an **accuaracy** of 99%!
 ### Top 5 movie rentals
 ![image](https://user-images.githubusercontent.com/90038586/228161726-21dae39b-ecd3-43d9-8cfc-3c9077a797bc.png)
 
-So, for example, **film_id** `103` is a movie with high demand, and we should keep more copies to our inventory. To find the name of the film, we simply do `SELECT * FROM film WHERE film_id = 103`  in SQL or Python, to get `BUCKET BROTHERHOOD`
+So, for example, **film_id** `103` is a movie with high demand, and we should keep more copies to our inventory. To find the name of the film, we simply do `SELECT * FROM film WHERE film_id = 103`  in SQL or Python, to get the name `BUCKET BROTHERHOOD`.
 
 
 ## Tools
