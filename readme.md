@@ -39,7 +39,7 @@ Our model achieved:
 * **141** True Negatives Vs **1** False Positive
 * & **143** True Positives Vs **3** False Negatives
     
-And an **accuaracy** of 99%!
+And an **accuracy** of 99%!
 
 ## Testing the Model
 
