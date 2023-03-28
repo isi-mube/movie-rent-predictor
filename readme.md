@@ -18,14 +18,14 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 * **Entropy-Bonus**: We fixed a GitHub formatting issue that displayed code horizontally due to HTML boxes.
 
 ## Changes (28/03/23)
-* **Structure**: Small changes to better structure.
+* **Structure**: Small changes for a better structure.
 * **Libraries**: We reduced the number.
 * **Roc curve plot**" Updated. Ty, Nati!
 * **LEFT JOIN**: Fixed. We use an INNER JOIN instead. It made no sense to extract films with 0 rentals.
-* **Treshold**: Last time was defined by the mean. This time, we use the median since our target `movie_demand` has a different distribution.
+* **Treshold**: Last time was defined by the mean. Now it's by the median since our target `movie_demand` has a different distribution.
 * **Normalization**: This time we will normalize numericals with StandScaler.
-* **Encoding**: We used get dummies this time instead of LabelEncoder
-* **Results**: We got a better accuaracy (99% compared to our previous 92%) and confussion matrix results.
+* **Encoding**: Get dummies this time instead of LabelEncoder
+* **Results**: Better accuaracy (99% compared to our previous 92%) and confussion matrix results.
 
 ## Results and Discussion 
 
