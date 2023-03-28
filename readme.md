@@ -55,7 +55,7 @@ In this case, `103` corresponds to `BUCKET BROTHERHOOD`.
 
 ## Tools
 **Enviornment**
-* VSCode and Jupyter Notebook
+* VSCode & Jupyter Notebook (sometimes Jupyterlab)
 
 **Libraries**
 * **Data manipulation:** pandas
