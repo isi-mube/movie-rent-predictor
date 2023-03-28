@@ -27,7 +27,7 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 * **Encoding**: Get dummies this time instead of LabelEncoder
 * **Results**: Better accuaracy (99% compared to our previous 92%) and confussion matrix results.
 
-## Results and Discussion 
+## Model Results
 
 ### Roc curve:
 ![image](https://user-images.githubusercontent.com/90038586/228161454-7e7049ce-8372-460a-a582-307b1648c51f.png)
