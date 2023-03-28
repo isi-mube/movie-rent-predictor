@@ -5,7 +5,7 @@
 ## About the Project
 The objective of this **project** is to determine the probability of a movie to being rented again based on a collection of over **one-year** historical data (from 2005/05/24 to 2006/02/14).
 
-This reposatory is build upon [my previous knowledge](https://github.com/isi-mube/mbappe-project), employing Logistic Regression for predictive analysis.
+This reposatory is build upon [my previous knowledge in Linear Regression](https://github.com/isi-mube/mbappe-project), to do Logistic Regression model for predictive analysis.
 
 ## About the Dataset
 For a complete description of the dataset extraction process, please refer to the [SQL script](https://github.com/isi-mube/movie-rent-predictor/blob/main/notebook/sql_database_extraction_process.sql).
@@ -17,23 +17,38 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 * **SQL**: Not my strongest point. For this project, it was important to decide whether RIGHT, LEFT or INNER JOIN to not loose data.
 * **Entropy-Bonus**: We fixed a GitHub formatting issue that displayed code horizontally due to HTML boxes.
 
+## Changes (28/03/23)
+* **Structure**: Small changes to better structure.
+* **Libraries**: We reduced the number.
+* **Roc curve plot**" Updated. Ty, Nati!
+* **LEFT JOIN**: Fixed. We use an INNER JOIN instead. It made no sense to extract films with 0 rentals.
+* **Treshold**: Last time was defined by the mean. This time, we use the median since our target `movie_demand` has a different distribution.
+* **Normalization**: This time we will normalize numericals with StandScaler.
+* **Encoding**: We used get dummies this time instead of LabelEncoder
+
+
+
 
 ## Results & Discussion
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/90038586/227800913-4e1194fb-5cd7-4950-802e-c0205de89505.png"/>
-</p>
+![image](https://user-images.githubusercontent.com/90038586/228161380-666efe90-6a81-4641-a416-3f88e2918396.png)
 
-The model achieved the following results:
+Our model achieved:
+* **141** True Negatives Vs **1** False Positive
+* & **143** True Positives Vs **3** False Negatives
+    
+And an **accuaracy** of 99%!
 
-* 144 True Positives Vs 14 False Positives
-* 132 True Negatives Vs 10 False Negatives
+![image](https://user-images.githubusercontent.com/90038586/228161454-7e7049ce-8372-460a-a582-307b1648c51f.png)
 
-And an accuaracy of 92%... quite solid!
+Roc curve
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/90038586/227800891-0ec7accb-fa17-4aaa-a1e5-2ab805e6b105.png"/>
-</p>
+## Testing the Model
+
+![image](https://user-images.githubusercontent.com/90038586/228161726-21dae39b-ecd3-43d9-8cfc-3c9077a797bc.png)
+![image](https://user-images.githubusercontent.com/90038586/228161772-85f6383a-e17d-4486-8723-30f7098b2fd6.png)
+![image](https://user-images.githubusercontent.com/90038586/228161843-2d7fb9d0-a584-4504-8eed-c73760cce451.png)
+![image](https://user-images.githubusercontent.com/90038586/228161890-6e90c212-b39b-421b-a02a-39f59924ce2d.png)
 
 
 ## Tools
@@ -47,7 +62,7 @@ And an accuaracy of 92%... quite solid!
 * **Settings:** warnings
 * **SQL connection:** getpass, create_engine
 * **Machine Learning:** scikit-learn
-* **Preprocessing:** LabelEncoder
+* **Preprocessing:** StandScaler
 * **Model selection:** train test split
 * **Logistic model:** LogisticRegression
-* **Metrics evaluation:** accuracy_score, confusion_matrix, ConfusionMatrixDisplay, metrics
+* **Metrics evaluation:** accuracy_score, confusion_matrix, ConfusionMatrixDisplay
