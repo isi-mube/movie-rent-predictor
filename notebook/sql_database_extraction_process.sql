@@ -59,6 +59,6 @@ DROP TABLE logistic_data;
 -- Now in Python, we will:
 -- Data Cleaning:
 	-- Encode categorical variables such as rating, special_features & name --> get dummies, for e.g.
-	-- Create a new column/feature as the target `demand_rating` either low/high (binary) by analyzing and classifying n_rental based on their range.
+	-- Create a new column/feature as the target variable movie_demand where 1 if > n_rentals average else 0.
 -- Then; EDA, processing, normalization, X-Y split, modeling, confussion matrix, roc curve and report.
 ############################################
