@@ -24,7 +24,7 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 * **LEFT JOIN**: Fixed. We use an INNER JOIN instead. It made no sense to extract films with 0 rentals.
 * **Treshold**: Last time was defined by the mean. Now it's by the median since our target `movie_demand` has a different distribution.
 * **Normalization**: This time we will normalize numericals with StandScaler.
-* **Encoding**: Get dummies instead of LabelEncoder
+* **Encoding**: Get dummies instead of LabelEncoder.
 * **Results**: Better accuaracy (99% compared to our previous 92%) and confussion matrix results.
 
 ## Model Results
