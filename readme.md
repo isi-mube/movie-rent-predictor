@@ -27,8 +27,12 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 * **Encoding**: We used get dummies this time instead of LabelEncoder
 * **Results**: We got a better accuaracy (99% compared to our previous 92%) and confussion matrix results.
 
-## Results & Discussion
+## Results and Discussion 
 
+### Roc curve:
+![image](https://user-images.githubusercontent.com/90038586/228161454-7e7049ce-8372-460a-a582-307b1648c51f.png)
+
+### Confussion matrix:
 ![image](https://user-images.githubusercontent.com/90038586/228161380-666efe90-6a81-4641-a416-3f88e2918396.png)
 
 Our model achieved:
@@ -36,10 +40,6 @@ Our model achieved:
 * & **143** True Positives Vs **3** False Negatives
     
 And an **accuaracy** of 99%!
-
-![image](https://user-images.githubusercontent.com/90038586/228161454-7e7049ce-8372-460a-a582-307b1648c51f.png)
-
-Roc curve
 
 ## Testing the Model
 
