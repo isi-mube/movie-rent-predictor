@@ -25,9 +25,7 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 * **Treshold**: Last time was defined by the mean. This time, we use the median since our target `movie_demand` has a different distribution.
 * **Normalization**: This time we will normalize numericals with StandScaler.
 * **Encoding**: We used get dummies this time instead of LabelEncoder
-
-
-
+* **Results**: We got a better accuaracy (99% compared to our previous 92%) and confussion matrix results.
 
 ## Results & Discussion
 
@@ -45,10 +43,9 @@ Roc curve
 
 ## Testing the Model
 
+### Top 5 movie rentals
 ![image](https://user-images.githubusercontent.com/90038586/228161726-21dae39b-ecd3-43d9-8cfc-3c9077a797bc.png)
-![image](https://user-images.githubusercontent.com/90038586/228161772-85f6383a-e17d-4486-8723-30f7098b2fd6.png)
-![image](https://user-images.githubusercontent.com/90038586/228161843-2d7fb9d0-a584-4504-8eed-c73760cce451.png)
-![image](https://user-images.githubusercontent.com/90038586/228161890-6e90c212-b39b-421b-a02a-39f59924ce2d.png)
+So, for example, **film_id** `103` is a movie with high demand, and we should keep more copies to our inventory. To find the name of the film, we simply do `SELECT * FROM film WHERE film_id = 103`  in SQL or Python, to get `BUCKET BROTHERHOOD`
 
 
 ## Tools
