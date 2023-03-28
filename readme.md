@@ -20,7 +20,7 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 ## Changes (28/03/23)
 * **Structure**: Small changes for a better structure.
 * **Libraries**: We reduced the number.
-* **Roc curve plot**" Updated. Ty, Nati!
+* **Roc curve plot**: Up2date. Ty, [Nati](https://github.com/natnaelfe)!.
 * **LEFT JOIN**: Fixed. We use an INNER JOIN instead. It made no sense to extract films with 0 rentals.
 * **Treshold**: Last time was defined by the mean. Now it's by the median since our target `movie_demand` has a different distribution.
 * **Normalization**: This time we will normalize numericals with StandScaler.
