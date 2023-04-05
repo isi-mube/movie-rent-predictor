@@ -18,39 +18,44 @@ Also, to read all documentation regarding `feture` selection and creating the `t
 * **Entropy-Bonus**: We fixed a GitHub formatting issue that displayed code horizontally due to HTML boxes.
 
 ## Changes (28/03/23)
-* **Structure**: Small changes to better structure.
+* **Structure**: Small changes for a better structure.
 * **Libraries**: We reduced the number.
-* **Roc curve plot**" Updated. Ty, Nati!
+* **Roc curve plot**: Up2date. Ty, [Nati](https://github.com/natnaelfe)!.
 * **LEFT JOIN**: Fixed. We use an INNER JOIN instead. It made no sense to extract films with 0 rentals.
-* **Treshold**: Last time was defined by the mean. This time, we use the median since our target `movie_demand` has a different distribution.
+* **Treshold**: Last time was defined by the mean. Now it's by the median since our target `movie_demand` has a different distribution.
 * **Normalization**: This time we will normalize numericals with StandScaler.
-* **Encoding**: We used get dummies this time instead of LabelEncoder
-* **Results**: We got a better accuaracy (99% compared to our previous 92%) and confussion matrix results.
+* **Encoding**: Get dummies instead of LabelEncoder.
+* **Results**: Better accuaracy (99% compared to our previous 92%) and confussion matrix results.
 
-## Results & Discussion
+## Model Results
 
+### Roc curve:
+![image](https://user-images.githubusercontent.com/90038586/228161454-7e7049ce-8372-460a-a582-307b1648c51f.png)
+
+### Confussion matrix:
 ![image](https://user-images.githubusercontent.com/90038586/228161380-666efe90-6a81-4641-a416-3f88e2918396.png)
 
 Our model achieved:
 * **141** True Negatives Vs **1** False Positive
 * & **143** True Positives Vs **3** False Negatives
     
-And an **accuaracy** of 99%!
-
-![image](https://user-images.githubusercontent.com/90038586/228161454-7e7049ce-8372-460a-a582-307b1648c51f.png)
-
-Roc curve
+And an **accuracy** of 99%!
 
 ## Testing the Model
 
 ### Top 5 movie rentals
 ![image](https://user-images.githubusercontent.com/90038586/228161726-21dae39b-ecd3-43d9-8cfc-3c9077a797bc.png)
-So, for example, **film_id** `103` is a movie with high demand, and we should keep more copies to our inventory. To find the name of the film, we simply do `SELECT * FROM film WHERE film_id = 103`  in SQL or Python, to get `BUCKET BROTHERHOOD`
+
+So, for example, **film_id** `103` is a movie with high demand, and we should keep more copies to our inventory. 
+
+To find a name of the film, we simply do `SELECT * FROM film WHERE film_id = X`  in SQL or Python. 
+
+In this case, `103` corresponds to `BUCKET BROTHERHOOD`.
 
 
 ## Tools
 **Enviornment**
-* VSCode and Jupyter Notebook
+* VSCode & Jupyter Notebook (sometimes Jupyterlab)
 
 **Libraries**
 * **Data manipulation:** pandas
