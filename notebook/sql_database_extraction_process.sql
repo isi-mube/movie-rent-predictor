@@ -21,6 +21,8 @@ GROUP BY I.film_id;
 ############################################
 
 -- Feature Selection; We examine tables like film, rental, category, film_actor, and inventory to find appropriate features for our model.
+SELECT * FROM store; # checking features
+SELECT COUNT(DISTINCT release_year) FROM film; # .unique()
 -- We exclude language_id as a feature because there's only one unique language_id (English) in our films for renting.
 SELECT COUNT(DISTINCT language_id) AS unique_film_languages FROM film;
 
@@ -33,6 +35,8 @@ SELECT F.film_id, F.rental_duration, F.rental_rate, F.length, F.rating, F.specia
 FROM film AS F
 JOIN film_category AS FC USING (film_id)
 JOIN category AS C USING (category_id);
+
+SELECT 
 
 
 ############################################
@@ -58,7 +62,8 @@ DROP TABLE logistic_data;
 ############################################
 -- Now in Python, we will:
 -- Data Cleaning:
-	-- Encode categorical variables such as rating, special_features & name --> get dummies, for e.g.
+	-- Encode categorical variables such as rating, special_features & name.
+    -- Drop film_id, we only used for as join.
 	-- Create a new column/feature as the target variable movie_demand where 1 if > n_rentals average else 0.
--- Then; EDA, processing, normalization, X-Y split, modeling, confussion matrix, roc curve and report.
+-- Then; EDA, processing, normalization, X-Y split, modeling, confussion matrix, metrics and report.
 ############################################
