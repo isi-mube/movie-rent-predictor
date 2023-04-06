@@ -55,7 +55,9 @@ Our model has:
 
 * 99 **True Negatives** Vs 39 False Positive
 * & 88 **True Positives** Vs 31 False Negatives
-The model is slightly better predicting True Negatives rather than positives. Our precision is balanced in both low (0) or high demand (1) and recall has a higher score for low demand movies.
+
+The model is slightly better predicting True Negatives rather than positives. 
+Our precision is balanced in both low (0) or high demand (1) and recall has a higher score for low demand movies.
 
 ## Comparision with previous attemp (unrealistic)
 
