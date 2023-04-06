@@ -1,6 +1,8 @@
 # MovieRent Predictor
 
-![image](https://user-images.githubusercontent.com/90038586/230295258-7abb4af1-36f4-489c-a99b-62d2dbaa99a2.png)
+<p align="center">
+  <img src="https://i.postimg.cc/q7RTS9DF/230295258-7abb4af1-36f4-489c-a99b-62d2dbaa99a2.png">
+</p>
 
 1. [SQL script](https://github.com/isi-mube/movie-rent-predictor/blob/main/notebook/sql_database_extraction_process.sql)
 2. [Python script](https://github.com/isi-mube/movie-rent-predictor/blob/main/notebook/imb_solution_lab_logistic_regression.ipynb)
