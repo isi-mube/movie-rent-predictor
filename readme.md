@@ -66,7 +66,7 @@ Our model has:
 ## Testing the Model
 
 ### Top 15 movie rentals
-![image](https://user-images.githubusercontent.com/90038586/230302929-fc577ee6-5ef1-43ee-aad8-525d1bb0e11e.png)
+![image](https://user-images.githubusercontent.com/90038586/230303226-ce70d383-e3d7-42a7-be24-ca4cf36ed4b2.png)
 
 So, for example, **film_id** `1000` is a movie with high demand, and we should keep more copies to our inventory. 
 
@@ -75,7 +75,7 @@ To find a name of the film, we simply do `SELECT * FROM film WHERE film_id = 100
 In this case, `1000` corresponds to `ZORRO ARK`.
 
 ### Less rented film
-![image](https://user-images.githubusercontent.com/90038586/230302980-0f1d543c-0cf0-490e-bd19-b9f7aa23da96.png)
+![image](https://user-images.githubusercontent.com/90038586/230303154-615c0e2f-009c-439c-9aca-a00269a8de62.png)
 
 And, **film_id** `400` had been rented 4 times during 2005/05/24 and it's not expected to be in demanand. Again, to get the name of the film; `SELECT * FROM film WHERE film_id = 400`:
 
